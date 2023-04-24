@@ -19,8 +19,8 @@ public class Homework30AwsApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        //s3.createBucket("java-bucket-hillel");
-        //s3.putObject("java-bucket-hillel","test",new File("test.txt"));
+        s3.createBucket("java-bucket-hillel");
+        s3.putObject("java-bucket-hillel","test",new File("test.txt"));
         s3.listBuckets().forEach(System.out::println);
 
     }
